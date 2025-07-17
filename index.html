@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Juda Sánchez</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Video de fondo */
+   #video-fondo {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 1;
+  filter: brightness(0.7) blur(8px);
+}
+
+
+    body {
+      margin: 0;
+      background: transparent; /* para dejar ver el video */
+      font-family: 'Inter', sans-serif;
+      color: #f0f6fc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+      text-align: center;
+      position: relative;
+      min-height: 100vh;
+      z-index: 1;
+    }
+
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 4px solid #1f6feb;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 15px #1f6feb99;
+      background: #0d1117; /* para que la imagen se vea bien */
+    }
+
+    .profile-pic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 1rem 0 0.5rem;
+    }
+
+    p {
+      color: #8b949e;
+      margin-bottom: 2rem;
+    }
+
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      width: 100%;
+      max-width: 360px;
+    }
+
+    .social-button {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1rem;
+      padding: 1rem 1.2rem;
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: bold;
+      font-size: 1.2rem;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 10px #00000055;
+      border: 2px solid transparent;
+    }
+
+    .social-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #ffffff55;
+    }
+
+    .instagram {
+      background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+      box-shadow: 0 0 15px #e6683c99;
+    }
+
+    .instagram:hover {
+      box-shadow: 0 0 30px #ff3f7d;
+    }
+
+    .tiktok {
+      background: linear-gradient(135deg, #000000, #25f4ee, #ff0050);
+      box-shadow: 0 0 15px #25f4ee99;
+    }
+
+    .tiktok:hover {
+      box-shadow: 0 0 30px #25f4ee;
+    }
+
+    .youtube {
+      background: linear-gradient(135deg, #ff0000, #cc0000);
+      box-shadow: 0 0 15px #ff000088;
+    }
+
+    .youtube:hover {
+      box-shadow: 0 0 30px #ff4444;
+    }
+
+    .facebook {
+      background: linear-gradient(135deg, #3b5998, #1877f2);
+      box-shadow: 0 0 15px #1877f299;
+    }
+
+    .facebook:hover {
+      box-shadow: 0 0 30px #3b83f6;
+    }
+
+    .icon {
+      width: 36px;
+      height: 36px;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: #8b949e;
+    }
+  </style>
+</head>
+<body>
+
+  <video autoplay muted loop id="video-fondo" playsinline>
+    <source src="Video de WhatsApp 2025-07-17 a las 00.47.18_2f968ea9.mp4" type="video/mp4" />
+    Tu navegador no soporta video HTML5.
+  </video>
+
+  <div class="profile-pic">
+    <img src="Juda foto.jpg" alt="Tu foto de perfil" />
+  </div>
+
+  <h1>Juda Sánchez</h1>
+  <p>Sígueme en mis redes sociales:</p>
+
+  <div class="social-links">
+    <!-- Instagram 1 -->
+    <a class="social-button instagram" href="https://www.instagram.com/juda_sanchez/" target="_blank" rel="noopener noreferrer">
+      <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" />
+      Juda Sánchez
+    </a>
+
+    <!-- Instagram 2 -->
+    <a class="social-button instagram" href="https://www.instagram.com/corazon_mictlan/" target="_blank" rel="noopener noreferrer">
+      <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" />
+      Corazon Mictlan
+    </a>
+
+    <!-- TikTok 1 -->
+    <a class="social-button tiktok" href="https://www.tiktok.com/@juda_sanchez" target="_blank" rel="noopener noreferrer">
+      <img class="icon" src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok" />
+      Juda Sánchez
+    </a>
+
+    <!-- TikTok 2 -->
+    <a class="social-button tiktok" href="https://www.tiktok.com/@corazonmictlan" target="_blank" rel="noopener noreferrer">
+      <img class="icon" src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok" />
+      Corazón Mictlan
+    </a>
+
+    <!-- YouTube -->
+    <a class="social-button youtube" href="https://www.youtube.com/@CorazonMictlan" target="_blank" rel="noopener noreferrer">
+      <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" />
+      Corazón Mictlan
+    </a>
+
+    <!-- Facebook 1 -->
+    <a class="social-button facebook" href="https://www.facebook.com/Sayu.Pe11" target="_blank" rel="noopener noreferrer">
+      <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1384/1384053.png" alt="Facebook" />
+      Juda Sánchez
+    </a>
+
+    <!-- Facebook 2 -->
+    <a class="social-button facebook" href="https://www.facebook.com/YudaCashoUwU" target="_blank" rel="noopener noreferrer">
+      <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1384/1384053.png" alt="Facebook" />
+      Corazón Mictlan
+    </a>
+  </div>
+
+  <footer>
+    © 2025 Juda Ben-Hur Sánchez Pérez — Todos los derechos reservados
+  </footer>
+
+</body>
+</html>
